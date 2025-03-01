@@ -6,7 +6,7 @@ require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const NEWS_API_URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=18a87f17ef6645f69c5f4c5202f8fadb`;
+const NEWS_API_URL = `https://newsapi.org/v2/everything?q=stock%20market%20OR%20finance%20OR%20Nifty50%20OR%20Sensex%20OR%20S&P500%20OR%20NASDAQ%20OR%20DowJones%20OR%20GoldmanSachs%20OR%20MorganStanley%20OR%20JP%20Morgan%20OR%20Deloitte&language=en&sortBy=publishedAt&pageSize=100&apiKey=18a87f17ef6645f69c5f4c5202f8fadb`;
 const CONTRACT_ADDRESS = "0x6779e8c6F659B28701b83F7cA33C1E7d3d9E2d17";
 const PRIVATE_KEY ="4896a66ec8c969fd5834b3cfdf1b81ea062ec9ddc92308211e5e2352b13ab4a3";
 const INFURA_URL = "https://eth-sepolia.g.alchemy.com/v2/6u7ET674Owl43opQSo0RlEb6MVb4cZKZ";
